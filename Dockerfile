@@ -9,4 +9,6 @@ RUN git clone https://github.com/pointbasis/fTetWild.git --recursive
 WORKDIR /app/fTetWild/build
 RUN cmake .. && make
 
-ENTRYPOINT ["/app/TetWild/build/FloatTetwild_bin"]
+#ENTRYPOINT ["/app/TetWild/build/FloatTetwild_bin"]
+
+CMD ["/bin/bash"]
